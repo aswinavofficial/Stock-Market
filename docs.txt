@@ -1,6 +1,0 @@
-mongoimport -d stock -c archives --type CSV --file archive.csv --headerline
-mongoimport -h ds151994.mlab.com:51994 -d stock -c archives -u admin -p pass123 --file archive.csv --type csv --headerline
-
-mongoimport -h ds151994.mlab.com:51994 -d stock -c archives -u test -p test123 --file  archive.csv --type csv --headerline
-CREATE USER 'brainwave'@'localhost' IDENTIFIED BY 'stock';
-GRANT ALL PRIVILEGES ON *.* TO 'brainwave'@'localhost' WITH GRANT OPTION;

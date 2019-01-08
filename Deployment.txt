@@ -1,0 +1,19 @@
+Deployment Steps
+
+1. Install NodeJS (Version : 8.13.0 ) and npm ( Version : 6.4.1 )
+   https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04
+  
+2. Install Mongodb (Version 3.6.3)
+
+3. Import data dump csv to mongo
+mongoimport -d stock -c archives --type CSV --file archive.csv --headerline
+
+4. Run API server
+    cd server
+    npm Install
+    npm start
+
+5. Open http://localhost:3004 in chrome browser
+
+(React build is included in the static folder of express)
+
