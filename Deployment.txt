@@ -11,10 +11,17 @@ mongoimport -d stock -c archives --type CSV --file archive.csv --headerline
 
 4. Run API server
     cd server
-    npm Install
+    npm install
     npm start
 
-5. Open http://localhost:3004 in chrome browser
+5. Run frontend
+    cd ..
+    cd front-end
+    npm install
+    npm start
 
-(React build is included in the static folder of express)
+
+5. Open http://localhost:3000 in chrome browser
+
+
 
