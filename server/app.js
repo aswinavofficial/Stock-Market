@@ -146,7 +146,9 @@ app.get('/api/chart/:symbol', function(req, res, next) {
 });
 
 
-
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname) + '/public/index.html');
+});
 
 //app.use('/api/archives', archivesRouter);
 

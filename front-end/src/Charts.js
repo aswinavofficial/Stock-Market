@@ -39,7 +39,7 @@ class ChartComponent extends Component {
   handleSubmit(event) {
     event.preventDefault();
     var query ="?day1="+this.state.selectedDay1+"&day2="+this.state.selectedDay2;
-    fetch("http://localhost:3004/api/chart/"+this.state.company+query)
+    fetch("api/chart/"+this.state.company+query)
       .then(res => res.json())
       .then(
         (result) => {
@@ -70,7 +70,7 @@ class ChartComponent extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3004/api/chart/ACN?day1=2016-12-01&day2=2016-12-30")
+    fetch("api/chart/ACN?day1=2016-12-01&day2=2016-12-30")
       .then(res => res.json())
       .then(
         (result) => {
