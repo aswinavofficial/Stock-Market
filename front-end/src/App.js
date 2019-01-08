@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ChartComponent from './Charts'
-import StockComponent from './Stocks'
-import StockHistoryComponent from './StockHistory'
+
 import Router from './Router'
 import NavigationBar from './NavigationBar';
 

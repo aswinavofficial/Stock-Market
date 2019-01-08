@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import DayPickerInput from 'react-day-picker/DayPickerInput';
-import 'react-day-picker/lib/style.css';
+// import 'react-day-picker/lib/style.css';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-// import Autocomplete from "./Autocomplete";
 
 
 
@@ -100,7 +98,6 @@ class ChartComponent extends Component {
 
   render() {
     
-    const { selectedDay1, selectedDay2 } = this.state;
     const { error, isLoaded, items } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
