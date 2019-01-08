@@ -1,0 +1,4 @@
+mongoimport -d stock -c archives --type CSV --file archive.csv --headerline
+
+CREATE USER 'brainwave'@'localhost' IDENTIFIED BY 'stock';
+GRANT ALL PRIVILEGES ON *.* TO 'brainwave'@'localhost' WITH GRANT OPTION;
