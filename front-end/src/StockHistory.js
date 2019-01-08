@@ -27,7 +27,7 @@ class StockHistoryComponent extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch("api/"+this.state.company)
+    fetch("http://localhost:3004/api/"+this.state.company)
     .then(res => res.json())
     .then(
       (result) => {
@@ -50,7 +50,7 @@ class StockHistoryComponent extends React.Component {
 
 
   componentDidMount() {
-    fetch("api/"+this.state.company)
+    fetch("http://localhost:3004/api/"+this.state.company)
       .then(res => res.json())
       .then(
         (result) => {
@@ -93,7 +93,7 @@ class StockHistoryComponent extends React.Component {
           </Col>
     </Row>
     </Container>
-   <br/> 
+   <br/> <br/>
 
 
 

@@ -24,7 +24,7 @@ class StockComponent extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch("api/stock/"+this.state.date)
+    fetch("http://localhost:3004/api/stock/"+this.state.date)
     .then(res => res.json())
     .then(
       (result) => {
@@ -47,7 +47,7 @@ class StockComponent extends React.Component {
 
 
   componentDidMount() {
-    fetch("api/stock/"+this.state.date)
+    fetch("http://localhost:3004/api/stock/"+this.state.date)
       .then(res => res.json())
       .then(
         (result) => {

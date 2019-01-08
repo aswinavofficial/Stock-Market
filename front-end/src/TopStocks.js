@@ -17,7 +17,7 @@ class TopStockComponent extends React.Component {
 
 
   componentDidMount() {
-    fetch("api/latest")
+    fetch("http://localhost:3004/api/latest")
       .then(res => res.json())
       .then(
         (result) => {
